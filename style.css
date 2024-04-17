@@ -1,0 +1,109 @@
+@media all {
+  /*gerais*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  /*main*/
+
+  .DivCalculadora{
+    background-color: rgb(30, 30, 30);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Resposta{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    padding: 15px;
+    height: 20px;
+  }
+
+  .DivCalculadora div{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    padding: 0px 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .numeros{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .numeros:hover{
+    background-color: rgb(56, 56, 56);
+  }
+
+  .operadores{
+    background-color: rgb(247, 105, 3);
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .operadores:hover{
+    background-color: rgb(255, 121, 26);
+  }
+
+  .Especial{
+    background-color: rgba(0, 177, 217, 0.858);
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .Especial:hover{
+    background-color: rgb(2, 194, 237, 0.858);
+  }
+
+  #igual{
+    width: 100%;
+    border-radius: 10px;
+  }
+
+}

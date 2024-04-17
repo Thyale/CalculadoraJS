@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="DivCalculadora">
+        <p class="Resposta"></p>
+        <div>
+          <p onclick="aparecer(`7`)" class="numeros">7</p>
+          <p onclick="aparecer(`8`)" class="numeros">8</p>
+          <p onclick="aparecer(`9`)" class="numeros">9</p>
+          <p onclick="aparecer(`+`)" class="operadores">+</p>
+        </div>
+        <div>
+          <p onclick="aparecer(`4`)" class="numeros">4</p>
+          <p onclick="aparecer(`5`)" class="numeros">5</p>
+          <p onclick="aparecer(`6`)" class="numeros" >6</p>
+          <p onclick="aparecer(`-`)" class="operadores">-</p>
+        </div>
+        <div>
+          <p onclick="aparecer(`1`)" class="numeros">1</p>
+          <p onclick="aparecer(`2`)" class="numeros">2</p>
+          <p onclick="aparecer(`3`)" class="numeros">3</p>
+          <p onclick="aparecer(`*`)" class="operadores">x</p>
+        </div>
+        <div>
+          <p onclick="aparecer(`0`)" class="numeros">0</p>
+          <p onclick="aparecer(`.`)" class="numeros">.</p>
+          <p onclick="limpar()" class="Especial">c</p>
+          <p onclick="aparecer(`/`)" class="operadores">/</p>
+        </div>
+        <div>
+          <p onclick="gerar()" id="igual" class="Especial">=</p>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
